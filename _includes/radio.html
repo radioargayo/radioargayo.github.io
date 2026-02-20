@@ -1,0 +1,172 @@
+
+<div class="radio-wrapper">
+
+  <audio id="radio" controls>
+    <source src="https://radiobot.radioslibres.info/public/radio_argayo" type="audio/mpeg">
+  </audio>
+
+  <div class="radio-widget">
+    <div class="meta">
+      <div id="live-badge" class="live" style="display:none;">● EN DIRECTO</div>
+      <div id="title">Cargando...</div>
+      <div id="subtitle"></div>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div class="time">
+      <span id="elapsed">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.radio-wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.radio-widget {
+  width: 100%;
+}
+
+.meta {
+  margin-bottom: 8px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#subtitle {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.live {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #007acc;
+  transition: width 1s linear;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* 📱 Móvil */
+@media (max-width: 600px) {
+  #title {
+    font-size: 1rem;
+  }
+
+  #subtitle {
+    font-size: 0.85rem;
+  }
+
+  .progress-container {
+    height: 8px;
+  }
+}
+
+/* 💻 Pantallas grandes */
+@media (min-width: 900px) {
+  .radio-wrapper {
+    padding: 20px;
+  }
+
+  #title {
+    font-size: 1.4rem;
+  }
+
+  .progress-container {
+    height: 12px;
+  }
+}
+</style>
+
+<script>
+const apiUrl = "https://radiobot.radioslibres.info/api/nowplaying/radio_argayo";
+
+let progressInterval;
+
+function formatTime(seconds) {
+  const min = Math.floor(seconds / 60);
+  const sec = Math.floor(seconds % 60);
+  return min + ":" + (sec < 10 ? "0" : "") + sec;
+}
+
+async function fetchNowPlaying() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    const isLive = data.live.is_live;
+    const title = data.now_playing.song.title || "Sin título";
+    const artist = data.now_playing.song.artist || "";
+    const elapsed = data.now_playing.elapsed;
+    const duration = data.now_playing.duration;
+
+    document.getElementById("title").textContent = title;
+    document.getElementById("subtitle").textContent = artist;
+
+    document.getElementById("live-badge").style.display = isLive ? "block" : "none";
+
+    document.getElementById("elapsed").textContent = formatTime(elapsed);
+    document.getElementById("duration").textContent = formatTime(duration);
+
+    updateProgress(elapsed, duration);
+
+    clearInterval(progressInterval);
+    progressInterval = setInterval(() => {
+      const bar = document.getElementById("progress-bar");
+      let currentWidth = parseFloat(bar.style.width) || 0;
+      let increment = 100 / duration;
+      bar.style.width = (currentWidth + increment) + "%";
+    }, 1000);
+
+    setTimeout(fetchNowPlaying, (duration - elapsed) * 1000 + 1000);
+
+  } catch (error) {
+    console.error("Error:", error);
+    setTimeout(fetchNowPlaying, 15000);
+  }
+}
+
+function updateProgress(elapsed, duration) {
+  const percent = (elapsed / duration) * 100;
+  document.getElementById("progress-bar").style.width = percent + "%";
+}
+
+fetchNowPlaying();
+</script>

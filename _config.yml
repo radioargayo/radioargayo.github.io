@@ -34,8 +34,8 @@ plugins:
   - jekyll-remote-theme
 
 colors:
-    gradient_left: "#2C2B66"
-    gradient_right: "#40327D"
+    gradient_left: "#ffee00"
+    gradient_right: "#ffee00"
     header: "#fff"
 
 # Exclude from processing.

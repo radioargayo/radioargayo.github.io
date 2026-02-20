@@ -1,0 +1,68 @@
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th>Hora</th>
+      {% for day in site.data.schedule.days %}
+        <th>{{ day }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+
+  <tbody>
+    {% assign hours = site.data.schedule.hours %}
+
+    {% for hour in hours %}
+      <tr>
+
+        {% if hour contains ":00" %}
+          <td class="time" rowspan="2">{{ hour }}</td>
+        {% endif %}
+
+        {% for day in site.data.schedule.days %}
+
+          {% assign rendered = false %}
+
+          {% for block in site.data.schedule.blocks %}
+            {% if block.day == day and block.start == hour %}
+              {% assign block_classes = "block block-" | append: block.type %}
+		{% if block.continuation %}
+		  {% assign block_classes = block_classes | append: " continuation" %}
+		{% endif %}
+
+		<td class="cell has-block{% if block.continuation %} continuation{% endif %}" rowspan="{{ block.rowspan }}">
+  <div class="{{ block_classes }}">
+    <a class="block-link" href="{{ block.url }}">
+      {% unless block.continuation %}
+        {{ block.title }}
+      {% endunless %}
+    </a>
+  </div>
+</td>
+
+              {% assign rendered = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
+          {% if rendered == false %}
+            {% assign in_block = false %}
+
+            {% for block in site.data.schedule.blocks %}
+              {% if block.day == day %}
+                {% if hour > block.start and hour < block.end %}
+                  {% assign in_block = true %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% unless in_block %}
+              <td class="cell"></td>
+            {% endunless %}
+          {% endif %}
+
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+

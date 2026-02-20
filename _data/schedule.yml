@@ -1,0 +1,380 @@
+# _data/schedule.yml
+
+hours:
+  - "07:00"
+  - "07:30"
+  - "08:00"
+  - "08:30"
+  - "09:00"
+  - "09:30"
+  - "10:00"
+  - "10:30"
+  - "11:00"
+  - "11:30"
+  - "12:00"
+  - "12:30"
+  - "13:00"
+  - "13:30"
+  - "14:00"
+  - "14:30"
+  - "15:00"
+  - "15:30"
+  - "16:00"
+  - "16:30"
+  - "17:00"
+  - "17:30"
+  - "18:00"
+  - "18:30"
+  - "19:00"
+  - "19:30"
+  - "20:00"
+  - "20:30"
+  - "21:00"
+  - "21:30"
+  - "22:00"
+  - "22:30"
+  - "23:00"
+  - "23:30"
+  - "00:00"
+  - "00:30"
+  - "01:00"
+  - "01:30"
+
+days:
+  - "Lunes"
+  - "Martes"
+  - "Miércoles"
+  - "Jueves"
+  - "Viernes"
+  - "Sábado"
+  - "Domingo"
+
+blocks:
+  - day: "Lunes"
+    start: "09:30"
+    end: "11:30"
+    rowspan: 4
+    type: "b"
+    title: "Noticias de Abajo"
+    url: ""
+    
+  - day: "Lunes"
+    start: "13:30"
+    end: "14:30"
+    rowspan: 2
+    type: "b"
+    title: "Mar de Fueguitos"
+    url: ""
+    
+  - day: "Lunes"
+    start: "15:00"
+    end: "16:00"
+    rowspan: 2
+    type: "b"
+    title: "HardCuore"
+    url: ""
+    
+  - day: "Lunes"
+    start: "16:30"
+    end: "18:30"
+    rowspan: 4
+    type: "b"
+    title: "Post Apocalipsis Nau"
+    url: ""
+    
+  - day: "Lunes"
+    start: "19:30"
+    end: "21:30"
+    rowspan: 4
+    type: "a"
+    title: "Desde Otras Islas"
+    url: "/programas/"
+    
+  - day: "Lunes"
+    start: "22:00"
+    end: "24:00"
+    rowspan: 4
+    type: "b"
+    title: "Dale Punki Dale"
+    url: ""
+    
+  - day: "Lunes"
+    start: "00:00"
+    end: "00:30"
+    rowspan: 1
+    type: "b"
+    title: "Dale Punki Dale"
+    url: ""
+    continuation: True
+    
+  - day: "Martes"
+    start: "07:00"
+    end: "09:00"
+    rowspan: 4
+    type: "b"
+    title: "Radio Coctelera"
+    url: ""
+    
+  - day: "Martes"
+    start: "10:00"
+    end: "11:00"
+    rowspan: 2
+    type: "a"
+    title: "Los Relatos de Alejandro"
+    url: "/programas/"
+
+  - day: "Martes"
+    start: "13:30"
+    end: "14:30"
+    rowspan: 2
+    type: "b"
+    title: "Menopausia Rebelde"
+    url: ""
+    
+  - day: "Martes"
+    start: "16:30"
+    end: "17:30"
+    rowspan: 2
+    type: "b"
+    title: "Café de Silverio"
+    url: ""
+    
+  - day: "Martes"
+    start: "19:00"
+    end: "20:00"
+    rowspan: 2
+    type: "a"
+    title: "Los Amigos de Artax"
+    url: "/programas/"
+    
+  - day: "Martes"
+    start: "23:00"
+    end: "24:00"
+    rowspan: 2
+    type: "b"
+    title: "Hardcore Radikal"
+    url: ""
+    
+  - day: "Martes"
+    start: "01:00"
+    end: "02:00"
+    rowspan: 2
+    type: "a"
+    title: "El Pájaro Observador"
+    url: "/programas/"
+    
+  - day: "Miércoles"
+    start: "10:00"
+    end: "11:00"
+    rowspan: 2
+    type: "b"
+    title: "La Contratertulia"
+    url: ""
+    
+  - day: "Miércoles"
+    start: "12:00"
+    end: "13:00"
+    rowspan: 2
+    type: "b"
+    title: "En Franca Decadencia"
+    url: ""
+    
+  - day: "Miércoles"
+    start: "15:00"
+    end: "16:00"
+    rowspan: 2
+    type: "b"
+    title: "La Vuelta al Mundo en 80 Músicas"
+    url: ""
+    
+  - day: "Miércoles"
+    start: "19:30"
+    end: "20:30"
+    rowspan: 2
+    type: "a"
+    title: "Libroteca"
+    url: "/programas/"
+
+  - day: "Miércoles"
+    start: "22:00"
+    end: "23:00"
+    rowspan: 2
+    type: "b"
+    title: "El Canto de la Tripulación"
+    url: ""
+    
+  - day: "Jueves"
+    start: "09:00"
+    end: "10:00"
+    rowspan: 2
+    type: "b"
+    title: "Continentes y Contenidos"
+    url: ""
+    
+  - day: "Jueves"
+    start: "10:30"
+    end: "11:30"
+    rowspan: 2
+    type: "b"
+    title: "Se Vienen Cosicas"
+    url: ""
+    
+  - day: "Jueves"
+    start: "11:30"
+    end: "12:30"
+    rowspan: 2
+    type: "b"
+    title: "Indígenas de la Otra Orilla"
+    url: ""
+    
+  - day: "Jueves"
+    start: "15:00"
+    end: "17:00"
+    rowspan: 4
+    type: "b"
+    title: "De Ráiz"
+    url: ""
+    
+  - day: "Jueves"
+    start: "18:00"
+    end: "19:30"
+    rowspan: 3
+    type: "b"
+    title: "Nosotras las Personas"
+    url: ""
+    
+  - day: "Jueves"
+    start: "21:30"
+    end: "23:00"
+    rowspan: 3
+    type: "b"
+    title: "100 Fuegos"
+    url: ""
+    
+  - day: "Viernes"
+    start: "11:00"
+    end: "13:00"
+    rowspan: 4
+    type: "b"
+    title: "La Linterna de Diógenes"
+    url: ""
+    
+  - day: "Viernes"
+    start: "13:30"
+    end: "14:30"
+    rowspan: 2
+    type: "a"
+    title: "La Tertulia de las Comadres"
+    url: "/programas/"
+    
+  - day: "Viernes"
+    start: "15:00"
+    end: "16:00"
+    rowspan: 2
+    type: "b"
+    title: "Coranimal"
+    url: ""
+    
+  - day: "Viernes"
+    start: "19:00"
+    end: "20:00"
+    rowspan: 2
+    type: "b"
+    title: "Hijos del Agobio"
+    url: ""
+    
+  - day: "Viernes"
+    start: "21:30"
+    end: "22:30"
+    rowspan: 2
+    type: "a"
+    title: "Música para Aburrir"
+    url: "/programas/"
+    
+  - day: "Sábado"
+    start: "10:00"
+    end: "12:00"
+    rowspan: 4
+    type: "b"
+    title: "Caipirinha Libre"
+    url: ""
+    
+  - day: "Sábado"
+    start: "12:00"
+    end: "13:00"
+    rowspan: 2
+    type: "a"
+    title: "Steppin"
+    url: "/programas/"
+    
+  - day: "Sábado"
+    start: "13:30"
+    end: "15:00"
+    rowspan: 3
+    type: "a"
+    title: "Fuera de Campo"
+    url: "/programas/"
+    
+  - day: "Sábado"
+    start: "17:00"
+    end: "18:00"
+    rowspan: 2
+    type: "a"
+    title: "El Pájaro Observador"
+    url: "/programas/"
+    
+  - day: "Sábado"
+    start: "21:30"
+    end: "24:00"
+    rowspan: 5
+    type: "b"
+    title: "Noche de Rock"
+    url: ""
+    
+  - day: "Domingo"
+    start: "09:30"
+    end: "10:30"
+    rowspan: 2
+    type: "b"
+    title: "Jazz Primitivo"
+    url: ""
+    
+  - day: "Domingo"
+    start: "11:00"
+    end: "12:00"
+    rowspan: 2
+    type: "b"
+    title: "Sangre Fucsia"
+    url: ""
+    
+  - day: "Domingo"
+    start: "12:30"
+    end: "13:30"
+    rowspan: 2
+    type: "b"
+    title: "Lluvia con Truenos"
+    url: ""
+    
+  - day: "Domingo"
+    start: "15:00"
+    end: "16:00"
+    rowspan: 2
+    type: "a"
+    title: "Los Relatos de Alejandro"
+    url: "/programas/"
+    
+  - day: "Domingo"
+    start: "17:00"
+    end: "18:00"
+    rowspan: 2
+    type: "a"
+    title: "La Tertulia de las Comadres"
+    url: ""
+    
+  - day: "Domingo"
+    start: "21:00"
+    end: "23:30"
+    rowspan: 5
+    type: "b"
+    title: "Condenado Podcast"
+    url: ""
