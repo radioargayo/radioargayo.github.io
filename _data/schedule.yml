@@ -56,7 +56,7 @@ blocks:
     rowspan: 4
     type: "b"
     title: "Noticias de Abajo"
-    url: ""
+    url: "https://www.ivoox.com/podcast-podcast-noticias-abajo-ml_sq_f1490293_1.html"
     
   - day: "Lunes"
     start: "13:30"
@@ -64,7 +64,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Mar de Fueguitos"
-    url: ""
+    url: "https://mardefueguitos.info/"
     
   - day: "Lunes"
     start: "15:00"
@@ -72,15 +72,15 @@ blocks:
     rowspan: 2
     type: "b"
     title: "HardCuore"
-    url: ""
+    url: "https://radiomalvapodcast.wordpress.com/"
     
   - day: "Lunes"
     start: "16:30"
     end: "18:30"
     rowspan: 4
     type: "b"
-    title: "Post Apocalipsis Nau"
-    url: ""
+    title: "Post Apocalipsis NAU"
+    url: "https://www.radiovallekas.org/programacion/"
     
   - day: "Lunes"
     start: "19:30"
@@ -88,7 +88,7 @@ blocks:
     rowspan: 4
     type: "a"
     title: "Desde Otras Islas"
-    url: "/programas/"
+    url: "/islas/"
     
   - day: "Lunes"
     start: "22:00"
@@ -96,7 +96,7 @@ blocks:
     rowspan: 4
     type: "b"
     title: "Dale Punki Dale"
-    url: ""
+    url: "https://www.ivoox.com/podcast-dalepunkidale_sq_f1569839_1.html"
     
   - day: "Lunes"
     start: "00:00"
@@ -104,7 +104,7 @@ blocks:
     rowspan: 1
     type: "b"
     title: "Dale Punki Dale"
-    url: ""
+    url: "https://www.ivoox.com/podcast-dalepunkidale_sq_f1569839_1.html"
     continuation: True
     
   - day: "Martes"
@@ -113,7 +113,7 @@ blocks:
     rowspan: 4
     type: "b"
     title: "Radio Coctelera"
-    url: ""
+    url: "https://podcast.radioalmaina.org/"
     
   - day: "Martes"
     start: "10:00"
@@ -121,7 +121,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Los Relatos de Alejandro"
-    url: "/programas/"
+    url: "/alejandro/"
 
   - day: "Martes"
     start: "13:30"
@@ -129,7 +129,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Menopausia Rebelde"
-    url: ""
+    url: "https://www.menopausiarebelde.com/"
     
   - day: "Martes"
     start: "16:30"
@@ -137,7 +137,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Café de Silverio"
-    url: ""
+    url: "https://www.ivoox.com/podcast-cafe-silverio_sq_f1552492_1.html"
     
   - day: "Martes"
     start: "19:00"
@@ -145,7 +145,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Los Amigos de Artax"
-    url: "/programas/"
+    url: "/artax/"
     
   - day: "Martes"
     start: "23:00"
@@ -153,7 +153,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Hardcore Radikal"
-    url: ""
+    url: "https://www.ivoox.com/en/podcast-hardcore-radikal_sq_f1359959_1.html"
     
   - day: "Martes"
     start: "01:00"
@@ -161,7 +161,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "El Pájaro Observador"
-    url: "/programas/"
+    url: "/pajaro/"
     
   - day: "Miércoles"
     start: "10:00"
@@ -169,7 +169,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "La Contratertulia"
-    url: ""
+    url: "https://www.agorasolradio.org/podcast/la-contratertulia/"
     
   - day: "Miércoles"
     start: "12:00"
@@ -177,7 +177,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "En Franca Decadencia"
-    url: ""
+    url: "https://www.agorasolradio.org/podcast/enfrancadecadencia/"
     
   - day: "Miércoles"
     start: "15:00"
@@ -185,7 +185,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "La Vuelta al Mundo en 80 Músicas"
-    url: ""
+    url: "https://www.uhu.es/uniradio/programas.php?prog=80musicas"
     
   - day: "Miércoles"
     start: "19:30"
@@ -193,7 +193,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Libroteca"
-    url: "/programas/"
+    url: "/libroteca/"
 
   - day: "Miércoles"
     start: "22:00"
@@ -201,7 +201,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "El Canto de la Tripulación"
-    url: ""
+    url: "https://podcast.radioalmaina.org/"
     
   - day: "Jueves"
     start: "09:00"
@@ -209,7 +209,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Continentes y Contenidos"
-    url: ""
+    url: "https://www.ivoox.com/podcast-continentes-contenidos_sq_f11490646_1.html"
     
   - day: "Jueves"
     start: "10:30"
@@ -217,7 +217,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Se Vienen Cosicas"
-    url: ""
+    url: "https://www.ivoox.com/en/podcast-se-vienen-cosicas_sq_f11761032_1.html"
     
   - day: "Jueves"
     start: "11:30"
@@ -225,15 +225,15 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Indígenas de la Otra Orilla"
-    url: ""
+    url: "https://www.ivoox.com/en/podcast-indigenas-dos-orillas_sq_f12595344_1.html"
     
   - day: "Jueves"
     start: "15:00"
     end: "17:00"
     rowspan: 4
     type: "b"
-    title: "De Ráiz"
-    url: ""
+    title: "De Raíz"
+    url: "http://www.deraizradio.org/"
     
   - day: "Jueves"
     start: "18:00"
@@ -241,7 +241,7 @@ blocks:
     rowspan: 3
     type: "b"
     title: "Nosotras las Personas"
-    url: ""
+    url: "https://audio.urcm.net/-Nosotras-las-Personas-"
     
   - day: "Jueves"
     start: "21:30"
@@ -249,7 +249,7 @@ blocks:
     rowspan: 3
     type: "b"
     title: "100 Fuegos"
-    url: ""
+    url: "https://radioxata.org/programas/100-fuegos/"
     
   - day: "Viernes"
     start: "11:00"
@@ -257,7 +257,7 @@ blocks:
     rowspan: 4
     type: "b"
     title: "La Linterna de Diógenes"
-    url: ""
+    url: "https://www.ivoox.com/podcast-podcast-podcast-linterna-diogenes_sq_f136870_1.html"
     
   - day: "Viernes"
     start: "13:30"
@@ -265,7 +265,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "La Tertulia de las Comadres"
-    url: "/programas/"
+    url: "/tertulia/"
     
   - day: "Viernes"
     start: "15:00"
@@ -273,7 +273,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Coranimal"
-    url: ""
+    url: "https://coranimal.contrabanda.org/"
     
   - day: "Viernes"
     start: "19:00"
@@ -281,7 +281,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Hijos del Agobio"
-    url: ""
+    url: "https://www.radiotopo.org/programa/hijos-del-agobio/"
     
   - day: "Viernes"
     start: "21:30"
@@ -289,7 +289,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Música para Aburrir"
-    url: "/programas/"
+    url: "/musicaaburrir/"
     
   - day: "Sábado"
     start: "10:00"
@@ -297,7 +297,7 @@ blocks:
     rowspan: 4
     type: "b"
     title: "Caipirinha Libre"
-    url: ""
+    url: "https://www.ivoox.com/podcast-caipirinha-libre_sq_f11428005_1.html"
     
   - day: "Sábado"
     start: "12:00"
@@ -305,7 +305,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Steppin"
-    url: "/programas/"
+    url: "/steppin/"
     
   - day: "Sábado"
     start: "13:30"
@@ -313,7 +313,7 @@ blocks:
     rowspan: 3
     type: "a"
     title: "Fuera de Campo"
-    url: "/programas/"
+    url: "/fueradecampo/"
     
   - day: "Sábado"
     start: "17:00"
@@ -321,7 +321,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "El Pájaro Observador"
-    url: "/programas/"
+    url: "/pajaro/"
     
   - day: "Sábado"
     start: "21:30"
@@ -329,7 +329,7 @@ blocks:
     rowspan: 5
     type: "b"
     title: "Noche de Rock"
-    url: ""
+    url: "https://www.nochederock.com/"
     
   - day: "Domingo"
     start: "09:30"
@@ -337,7 +337,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Jazz Primitivo"
-    url: ""
+    url: "https://podcast.radioalmaina.org/"
     
   - day: "Domingo"
     start: "11:00"
@@ -345,7 +345,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Sangre Fucsia"
-    url: ""
+    url: "https://www.agorasolradio.org/podcast/sangrefucsia/"
     
   - day: "Domingo"
     start: "12:30"
@@ -353,7 +353,7 @@ blocks:
     rowspan: 2
     type: "b"
     title: "Lluvia con Truenos"
-    url: ""
+    url: "http://lluviacontruenosradio.org/"
     
   - day: "Domingo"
     start: "15:00"
@@ -361,7 +361,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "Los Relatos de Alejandro"
-    url: "/programas/"
+    url: "/alejando/"
     
   - day: "Domingo"
     start: "17:00"
@@ -369,7 +369,7 @@ blocks:
     rowspan: 2
     type: "a"
     title: "La Tertulia de las Comadres"
-    url: ""
+    url: "/tertulia/"
     
   - day: "Domingo"
     start: "21:00"
@@ -377,4 +377,4 @@ blocks:
     rowspan: 5
     type: "b"
     title: "Condenado Podcast"
-    url: ""
+    url: "https://condenadofanzine.com/category/radio-condenado/"

@@ -1,0 +1,164 @@
+- name: El Pájaro Observador
+  image: /assets/imgs/programas/pajaro.jpg
+  link: /pajaro
+  emision: 
+    - dia: Miércoles
+      hora: "01:00"
+    - dia: Sábados
+      hora: "17:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-pajaro-observador_sq_f1614349_1.html
+    facebook: https://www.facebook.com/ElPajaroObservador
+    bluesky: https://bsky.app/profile/elpajaroobservador.bsky.social
+    instagram: https://www.instagram.com/elpajaroobservador/
+    youtube: https://www.youtube.com/channel/UCDSEPjqN2JE1b241NCzVktQ
+  descripcion: |
+    Un programa para **dar voz a las mujeres y los hombres olvidados.**
+
+    A todas aquellas personas que no son escuchadas pero que tienen **mucho que decir y mucho que reivindicar en el actual contexto** tanto mundial como regional en el que nos encontramos.
+
+    Cuando hablamos de los olvidados, hablamos de ella, hablamos de él y hablamos de ti.
+
+    Contamos con todos vosotros y vosotras para formar parte de este proyecto y crecer juntos. **Queremos informar y ser informados.**
+
+    Emitiendo desde un nido oculto en algún salvaje bosque de Cantabria.
+
+- name: Los Amigos de Ártax
+  image: /assets/imgs/programas/artax.jpg
+  link: /artax
+  emision: 
+    - dia: Martes
+      hora: "19:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-podcast-amigos-artax_sq_f11124483_1.html
+  descripcion: |
+    Un programa hecho desde el subsuelo de Santander.
+
+    Para descansar sin desconectar.
+
+    Para subvertir lugares menos habitados por la crítica social.
+
+- name: El Trashtero
+  image: /assets/imgs/programas/trastero.jpg
+  link: /trastero
+  emision: 
+    - dia: Jueves
+      hora: "19:00"
+  redes:
+    ivoox: https://www.ivoox.com/audios-thrashtero_s0_f2925826_p2_1.html?o=all
+    instagram: https://www.instagram.com/el_thrashtero/
+  descripcion: |
+    Programa de Radio Argayo, dedicado a repasar **novedades y lanzamientos dentro de la música metal y el rock duro**, sin olvidarnos de clásicos del género, ni de bandas tanto españolas como cántabras.
+
+- name: La Tertulia de las Comadres
+  image: /assets/imgs/programas/tertulia.jpg
+  link: /tertulia
+  emision: 
+    - dia: Viernes
+      hora: "13:30"
+    - dia: Domingos
+      hora: "17:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-tertulia-comadres_sq_f11170477_1.html
+    facebook: https://www.facebook.com/tertuliacomadres
+  descripcion: >
+    ¿**Dónde** se han resuelto a lo largo de los tiempos los problemas que afectaban a las **mujeres de las comunidades**?
+
+    ¿**En qué lugares** se juntaban los afectos, ternuras y complicidades entre **niñas y adultas mayores**? 
+
+    Iniciamos este viaje radiofónico, para poner en valor **palabras y voces femeninas, imprescindibles** en todos los espacios públicos necesarios. 
+
+    Queremos que habiten las ondas **en formato de tertulia**.
+
+    Porque **fueron**, somos.
+
+    Porque hablaron, **hablamos entre comadres**.
+
+- name: Los Relatos de Alejandro
+  image: /assets/imgs/programas/alejandro.png
+  link: /alejandro
+  emision: 
+    - dia: Martes
+      hora: "10:00"
+    - dia: Domingos
+      hora: "15:00"
+  redes:
+    ivoox: https://www.ivoox.com/escuchar-relatos-alejandro_nq_926312_1.html
+    facebook: https://www.facebook.com/TheStoryTellerCantabria
+  descripcion: |
+    Diferentes tipos de cuentos y relatos de [Alejandro Ahumada](https://ahumada.es/). Alguno inclusive para niños, pero que gustarán a los no tan niños.
+
+    Algunos se basan en hechos reales, otros son pura fantasía y otros son una mezcla de las dos cosas.
+
+    Cada oyente debe decidir en qué categoría caben.
+
+- name: Música para Aburrir
+  image: /assets/imgs/programas/musicaaburrir.jpg
+  link: /musicaaburrir
+  emision: 
+    - dia: Viernes
+      hora: "21:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-musica-pedagogia_sq_f11639609_1.html
+  descripcion: |
+    Interesante podcast de Miguel Santamaría que nos cuenta las relaciones entre diferentes estilos musicales, la influencia de unos sobre otros, de la música académica con la música popular a lo largo de la historia.
+
+- name: Libroteca
+  image: /assets/imgs/programas/libroteca.png
+  link: /libroteca
+  emision: 
+    - dia: Miércoles
+      hora: "20:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-libroteca-historias-librerias-bibliotecas_sq_f1926133_1.html
+    instagram: https://www.instagram.com/podcastlibroteca/
+  descripcion: |
+    Se buscan **librerías y bibliotecas de todo el mundo que quieran contar su propia historia** y las de la comunidad que crean en torno a ellas.
+
+    Así, acabaremos hablando de personas y personajes, curiosidades y anécdotas, hechos históricos y ficciones... pero **siempre buscando a esas mujeres menos conocidas que forman parte de esas historias colectivas**. 
+
+    Para ello, además del podcast, tienes su blog [podcastlibroteca.es](http://podcastlibroteca.es/), donde poder ver las imágenes de las librerías y las bibliotecas, poner cara a las mujeres de las que se hablan y por supuesto, ver las fuentes de lo que se cuenta.
+
+    Se admiten contrastes a la información y sugerencias de lugares que merecen la pena descubrir.
+
+- name: Desde Otras Islas
+  image: /assets/imgs/programas/islas.jpg
+  link: /islas
+  emision: 
+    - dia: Lunes
+      hora: "19:30"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-desde-otras-islas_sq_f11419972_1.html
+  descripcion: |
+    Un podcast de [Vicente Gutiérrez Escudero](https://vicentegutierrezescudero.wordpress.com/).
+
+    Ecografías del hundimiento del capitalismo termo-industrial. Observatorio de la metástasis capitalista. Análisis crítico de la descomposición de la civilización mercantil y del desastre en marcha. Surrealismo. Vida.
+
+- name: Fuera de Campo
+  image: /assets/imgs/programas/fueradecampo.png
+  link: /fueradecampo
+  emision: 
+    - dia: Sábados
+      hora: "13:30"
+  redes:
+    ivoox: https://www.ivoox.com/en/podcast-fuera-campo_sq_f12786259_1.html
+    letterboxd: https://letterboxd.com/jlbarckly/
+    instagram: https://www.instagram.com/fuera.de.campo_cine?igsh=MWgybXY1c3l4dHJv
+  descripcion: |
+    El proyector se apaga, se encienden las luces, te levantas de tu butaca. Comentas los últimos fotogramas de la película se te quedan prendidos en los ojos. Al día siguiente, **sigues pensando en la película**.
+    
+    Si esto te suena, Fuera de Campo es tu programa: un programa dedicado a la crítica de cine, mirando a las películas desde todos los ángulos y centrándonos en **lo que cuentan, cómo lo cuentan y cómo se ha hecho para contarlo de esa manera**. 
+    
+    Somos conscientes de la potencia del cine para representar y crear imaginarios, foto viva de la sociedad y mano amasadora del futuro. Por esa razón, no podemos dejar de mirar al **cine de una manera política**, estudiando también lo que muestra y cómo lo representa. 
+    
+    Cada dos semanas una película nueva, estrenos o no tan reciente, fresca en tu retina y en tus oídos. 
+
+- name: Steppin
+  image: /assets/imgs/programas/steppin.png
+  link: /steppin
+  emision: 
+    - dia: Sábados
+      hora: "12:00"
+  redes: {}
+  descripcion: | 
+    Steppin’ es un programa dedicado al reggae, a algunos de sus antecesores como pueden ser el ska o el rocksteady y, ¿por qué no?, también a otros tantos géneros derivados que han ido surgiendo con el paso de los años. 

@@ -1,31 +1,61 @@
-
 <div class="radio-wrapper">
 
-  <audio id="radio" controls>
-    <source src="https://radiobot.radioslibres.info/listen/radio_argayo/radio.mp3" type="audio/mpeg">
+  <!-- Audio oculto -->
+  <audio id="radio" preload="metadata">
+    <source src="https://radiobot.radioslibres.info/listen/radio_argayo/radio.ogg" type="audio/mpeg">
   </audio>
 
   <div class="radio-widget">
-    <div class="meta">
+    <!-- Imagen -->
+    <img id="cover" src="/assets/imgs/default-cover.png" alt="Portada" />
+
+    <div class="radio-info">
       <div id="live-badge" class="live" style="display:none;">● EN DIRECTO</div>
       <div id="title">Cargando...</div>
       <div id="subtitle"></div>
-    </div>
 
-    <div class="progress-container">
-      <div id="progress-bar"></div>
-    </div>
+      <!-- Barra de progreso -->
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+        <div class="progress-time">
+          <span id="elapsed">0:00</span> / <span id="duration">0:00</span>
+        </div>
+      </div>
 
-    <div class="time">
-      <span id="elapsed">0:00</span>
-      <span id="duration">0:00</span>
-    </div>
-  </div>
+      <!-- Controles: play + volumen -->
+      <div class="controls">
+        <!-- Botón Play/Pause con SVG -->
+        <button id="play-btn" class="icon-btn">
+          <!-- Play por defecto -->
+          <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <!-- Pause oculto -->
+          <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="display:none;">
+            <path d="M6 19h4V5H6zm8-14v14h4V5z"/>
+          </svg>
+        </button>
 
-</div>
+        <!-- Volumen con icono -->
+        <div class="volume-control">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#007acc" style="margin-right:5px;">
+            <path d="M3 10v4h4l5 5V5l-5 5H3z"/>
+          </svg>
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+      </div> <!-- Fin de controls -->
+
+    </div> <!-- Fin de radio-info -->
+
+  </div> <!-- Fin de radio-widget -->
+
+</div> <!-- Fin de radio-wrapper -->
 
 <script>
 const apiUrl = "https://radiobot.radioslibres.info/api/nowplaying/radio_argayo";
+const audio = document.getElementById("radio");
+const playBtn = document.getElementById("play-btn");
+const volumeSlider = document.getElementById("volume");
 
 let progressInterval;
 
@@ -35,33 +65,59 @@ function formatTime(seconds) {
   return min + ":" + (sec < 10 ? "0" : "") + sec;
 }
 
+// Play / Pause
+playBtn.addEventListener("click", () => {
+  const playIcon = document.getElementById("play-icon");
+  const pauseIcon = document.getElementById("pause-icon");
+
+  if(audio.paused){
+    audio.play();
+    playIcon.style.display = "none";
+    pauseIcon.style.display = "inline";
+  } else {
+    audio.pause();
+    playIcon.style.display = "inline";
+    pauseIcon.style.display = "none";
+  }
+});
+
+// Volumen
+volumeSlider.addEventListener("input", () => {
+  audio.volume = volumeSlider.value;
+});
+
 async function fetchNowPlaying() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
     const isLive = data.live.is_live;
-    const title = data.now_playing.song.title || "Sin título";
+    const song = data.now_playing.song.title || "Sin título";
     const artist = data.now_playing.song.artist || "";
+    const art = data.now_playing.song.art;
     const elapsed = data.now_playing.elapsed;
     const duration = data.now_playing.duration;
 
-    document.getElementById("title").textContent = title;
+    document.getElementById("title").textContent = song;
     document.getElementById("subtitle").textContent = artist;
-
     document.getElementById("live-badge").style.display = isLive ? "block" : "none";
 
+    // Imagen
+    const cover = document.getElementById("cover");
+    cover.src = art ? art : "/assets/imgs/default-cover.png";
+
+    // Duración inicial
     document.getElementById("elapsed").textContent = formatTime(elapsed);
     document.getElementById("duration").textContent = formatTime(duration);
 
-    updateProgress(elapsed, duration);
-
+    // Barra de progreso
     clearInterval(progressInterval);
     progressInterval = setInterval(() => {
       const bar = document.getElementById("progress-bar");
-      let currentWidth = parseFloat(bar.style.width) || 0;
-      let increment = 100 / duration;
-      bar.style.width = (currentWidth + increment) + "%";
+      const newElapsed = Math.min(audio.currentTime || elapsed, duration);
+      const percent = (newElapsed / duration) * 100;
+      bar.style.width = percent + "%";
+      document.getElementById("elapsed").textContent = formatTime(newElapsed);
     }, 1000);
 
     setTimeout(fetchNowPlaying, (duration - elapsed) * 1000 + 1000);
@@ -70,11 +126,6 @@ async function fetchNowPlaying() {
     console.error("Error:", error);
     setTimeout(fetchNowPlaying, 15000);
   }
-}
-
-function updateProgress(elapsed, duration) {
-  const percent = (elapsed / duration) * 100;
-  document.getElementById("progress-bar").style.width = percent + "%";
 }
 
 fetchNowPlaying();

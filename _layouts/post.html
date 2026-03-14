@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <h1>{{ page.title }}</h1>
+
+  <p class="post-meta">
+    {{ page.date | date: "%d/%m/%Y" }} |
+    <a href="/categorias/{{ page.categories[0] | slugify }}/">
+      {{ page.categories[0] }}
+    </a>
+  </p>
+
+  {% if page.image %}
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="post-featured-image">
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% include post-tags.html %}
+</article>

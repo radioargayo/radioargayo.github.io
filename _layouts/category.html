@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h1>Entradas del blog de la categoría: {{ page.title }}</h1>
+
+{% assign posts_in_category = site.categories[page.category_name] %}
+
+{% assign posts_per_page = 8 %}
+{% assign total_pages = posts_in_category.size | divided_by: posts_per_page | ceil %}
+{% assign current_page = page.page | default: 1 %}
+{% assign start = posts_per_page | times: current_page | minus: posts_per_page %}
+{% assign end = posts_per_page | times: current_page | minus: 1 %}
+
+{% for post in posts_in_category %}
+  {% if forloop.index0 >= start and forloop.index0 <= end %}
+    {% include post-preview.html %}
+  {% endif %}
+{% endfor %}
+
+<div class="pagination">
+  {% if current_page > 1 %}
+    {% assign prev_page = current_page | minus: 1 %}
+    <a href="{% if prev_page == 1 %}{{ page.url }}{% else %}{{ page.url }}page{{ prev_page }}/{% endif %}">← Anterior</a>
+  {% endif %}
+
+  {% if current_page < total_pages %}
+    {% assign next_page = current_page | plus: 1 %}
+    <a href="{{ page.url }}page{{ next_page }}/">Siguiente →</a>
+  {% endif %}
+</div>

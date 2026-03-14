@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+{% assign current_programa = site.data.programas_grid | where: "name", page.programa | first %}
+
+{% if current_programa %}
+<div class="programa-detalle">
+
+  <h2 class="programa-titulo">{{ current_programa.name }}</h2>
+
+  <div class="programa-main">
+    <div class="programa-imagen">
+      <img src="{{ current_programa.image }}" alt="{{ current_programa.name }}">
+    </div>
+    <div class="programa-descripcion">
+      {{ current_programa.descripcion | markdownify }}
+    </div>
+  </div>
+
+  {% if current_programa.emision %}
+  <div class="programa-emision">
+  <br>
+    <h3>Escúchalo en Radio Argayo:</h3>
+    <ul>
+      {% for e in current_programa.emision %}
+        <li> -- <b>{{ e.dia }}</b> a las <b>{{ e.hora }}</b> horas.</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if current_programa.redes %}
+  <div class="programa-redes">
+  <br>
+    <h3>Y además...</h3>
+    <div class="social-icons">
+      {% for red in current_programa.redes %}
+        {% assign nombre = red[0] | downcase %}
+        {% assign url = red[1] %}
+
+        <a href="{{ url }}"
+           class="social-icon {{ nombre }}"
+           target="_blank"
+           aria-label="{{ nombre | capitalize }}">
+
+          {% include social-icons/{{ nombre }}.html %}
+
+        </a>
+
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+  
+  <div class="volver-programas">
+  <a href="{{ '/programas/' | relative_url }}" class="btn-volver">
+    ← Volver a Programas Propios
+  </a>
+</div>
+
+</div>
+{% else %}
+<p>Programa no encontrado.</p>
+{% endif %}

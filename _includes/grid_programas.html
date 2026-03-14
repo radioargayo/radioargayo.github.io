@@ -1,0 +1,8 @@
+<div class="grid-container">
+  {% for item in site.data.programas_grid %}
+    <a href="{{ item.link }}" class="grid-item">
+      <img src="{{ item.image }}" alt="{{ item.name }}">
+      <span>{{ item.name }}</span>
+    </a>
+  {% endfor %}
+</div>

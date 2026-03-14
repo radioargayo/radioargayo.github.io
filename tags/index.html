@@ -1,0 +1,16 @@
+---
+layout: default
+title: Tags
+---
+<h1>Todos los tags</h1>
+
+<ul>
+{% assign all_tags = site.tags | sort %}
+{% for tag in all_tags %}
+  {% assign tag_name = tag[0] %}
+  <li>
+    <a href="/tags/{{ tag_name | slugify }}/">{{ tag_name }}</a>
+    ({{ tag[1].size }} posts)
+  </li>
+{% endfor %}
+</ul>

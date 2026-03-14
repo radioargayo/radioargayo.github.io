@@ -1,0 +1,146 @@
+# ======================
+# PODCASTS
+# ======================
+
+- tipo: podcast
+  nombre: Café de Silverio
+  url: https://www.ivoox.com/podcast-cafe-silverio_sq_f1552492_1.html
+
+- tipo: podcast
+  nombre: Caipirinha Libre
+  url: https://www.ivoox.com/podcast-caipirinha-libre_sq_f11428005_1.html
+  
+- tipo: podcast
+  nombre: Condenado Podcast
+  url: https://condenadofanzine.com/category/radio-condenado/
+  
+- tipo: podcast
+  nombre: Continentes y Contenidos
+  url: https://www.ivoox.com/podcast-continentes-contenidos_sq_f11490646_1.html
+  
+- tipo: podcast
+  nombre: Coranimal
+  url: https://coranimal.contrabanda.org/
+
+- tipo: podcast
+  nombre: Dale Punki Dale
+  url: https://www.ivoox.com/podcast-dalepunkidale_sq_f1569839_1.html
+  
+- tipo: podcast
+  nombre: De Raíz
+  url: http://www.deraizradio.org/
+  
+- tipo: podcast
+  nombre: Hardcore Radikal
+  url: https://www.ivoox.com/en/podcast-hardcore-radikal_sq_f1359959_1.html
+  
+- tipo: podcast
+  nombre: Indígenas de la Otra Orilla
+  url: https://www.ivoox.com/en/podcast-indigenas-dos-orillas_sq_f12595344_1.html
+  
+- tipo: podcast
+  nombre: Indígenas de la Otra Orilla
+  url: https://www.ivoox.com/podcast-podcast-podcast-linterna-diogenes_sq_f136870_1.html
+
+- tipo: podcast
+  nombre: Lluvia con Truenos
+  url: http://lluviacontruenosradio.org/
+
+- tipo: podcast
+  nombre: Mar de Fueguitos
+  url: https://mardefueguitos.info/
+  
+- tipo: podcast
+  nombre: Menopausia Rebelde
+  url: https://www.menopausiarebelde.com/
+  
+- tipo: podcast
+  nombre: Noche de Rock
+  url: https://www.nochederock.com/
+  
+- tipo: podcast
+  nombre: Noticias de Abajo
+  url: https://www.ivoox.com/podcast-podcast-noticias-abajo-ml_sq_f1490293_1.html
+
+- tipo: podcast
+  nombre: Se Vienen Cosicas
+  url: https://www.ivoox.com/en/podcast-se-vienen-cosicas_sq_f11761032_1.html
+
+# ======================
+# PROGRAMAS EN OTRAS RADIOS
+# ======================
+
+- tipo: radio
+  radio:
+    nombre: Agora Sol Radio
+    url: https://www.agorasolradio.org/
+  programas:
+    - nombre: En Franca Decadencia
+      url: https://www.agorasolradio.org/podcast/enfrancadecadencia/
+    - nombre: La Contratertulia
+      url: https://www.agorasolradio.org/podcast/la-contratertulia/
+    - nombre: Sangre Fucsia
+      url: https://www.agorasolradio.org/podcast/sangrefucsia/
+      
+- tipo: radio
+  radio:
+    nombre: Radio Almaina
+    url: https://radioalmaina.org/
+  programas:
+    - nombre: El Canto de la Tripulación
+      url: https://podcast.radioalmaina.org/
+    - nombre: Jazz Primitivo
+      url: https://podcast.radioalmaina.org/
+    - nombre: Radio Coctelera
+      url: https://podcast.radioalmaina.org/
+
+
+- tipo: radio
+  radio:
+    nombre: Radio Malva
+    url: https://radiomalva.org/
+  programas:
+    - nombre: Hard Quore
+      url: https://radiomalvapodcast.wordpress.com/
+      
+      
+- tipo: radio
+  radio:
+    nombre: Radio Topo
+    url: https://www.radiotopo.org/
+  programas:
+    - nombre: Hijos del Agobio
+      url: https://www.radiotopo.org/programa/hijos-del-agobio/
+
+- tipo: radio
+  radio:
+    nombre: Radio Vallekas
+    url: https://www.radiovallekas.org/
+  programas:
+    - nombre: Post Apocalipsis NAU
+      url: https://www.radiovallekas.org/programacion/
+
+      
+- tipo: radio
+  radio:
+    nombre: Radio Xata
+    url: https://radioxata.org/
+  programas:
+    - nombre: Cien Fuegos
+      url: https://radioxata.org/programas/100-fuegos/
+      
+- tipo: radio
+  radio:
+    nombre: Unión de Radios Libres y Comunitarias de Madrid
+    url: https://audio.urcm.net/
+  programas:
+    - nombre: Nosotras las Personas
+      url: https://audio.urcm.net/-Nosotras-las-Personas-
+      
+- tipo: radio
+  radio:
+    nombre: UniRadio
+    url: https://www.uhu.es/uniradio/index.php
+  programas:
+    - nombre: La Vuelta al Mundo en 80 músicas
+      url: https://www.uhu.es/uniradio/programas.php?prog=80musicas

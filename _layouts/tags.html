@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1>Posts con tag: "{{ page.tag_name }}"</h1>
+
+{% assign posts_in_tag = site.tags[page.tag_name] %}
+{% for post in posts_in_tag %}
+  {% include post-preview.html %}
+{% endfor %}
+
+<!-- Paginación si quieres (igual que categorías) -->
+
+
+
+
+
+
+
+
+
+
+
