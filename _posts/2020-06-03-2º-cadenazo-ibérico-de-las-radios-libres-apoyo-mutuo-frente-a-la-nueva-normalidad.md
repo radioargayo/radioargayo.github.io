@@ -2,7 +2,7 @@
 title: "2º Cadenazo Ibérico de las radios libres: apoyo mutuo frente a la nueva normalidad"
 date: 2020-06-03
 categories: [noticias, radios-libres]
-image: /assets/imgs/posts/cadenaso-300x150
+image: /assets/imgs/posts/cadenaso-300x150.jpg
 tags: [cadenazo, cadenazo iberico, el pajaro observador, radio argayo, radio bronca, radios almaina, radios libres]
 excerpt: "25 radios libres y podcast de todo el estado se unen en una emisión conjunta por el apoyo mutuo, contra la exclusión y la pobreza de la nueva normalidad. El pasado 10 de mayo tuvo lugar la emisión del 1er Cadenazo Ibérico de las radios libres. Una emisión conjunta de 16 horas en la que […]"
 ---

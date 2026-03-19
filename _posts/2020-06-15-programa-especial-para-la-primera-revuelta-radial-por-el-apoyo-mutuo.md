@@ -2,7 +2,7 @@
 title: "Programa especial para la primera «Revuelta Radial por el Apoyo Mutuo»"
 date: 2020-06-15
 categories: [noticias, radios-libres, programas-propios]
-image: 
+image: /assets/imgs/posts/logo_header_left.png
 excerpt: "El pasado sábado 13 de junio, El Pájaro Observador y Radio Argayo participamos en la primera «Revuelta Radial por el Apoyo Mutuo» que organizaron nuestras compañeras y compañeros de Latinoamérica y en la que participaron diversas radios y medios libres de muchos territorios del mundo. Esta iniciativa deriva de los cadenazos internacionales que tuvieron lugar […]"
 ---
 

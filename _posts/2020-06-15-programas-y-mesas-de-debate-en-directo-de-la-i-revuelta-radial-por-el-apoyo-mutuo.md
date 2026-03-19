@@ -2,7 +2,7 @@
 title: "Programas y mesas de debate en directo de la «I Revuelta Radial por el Apoyo Mutuo"
 date: 2020-06-15
 categories: [noticias, radios-libres]
-image: 
+image: /assets/imgs/posts/logo_header_left.png
 excerpt: En este link están ya disponibles todos los programas y las mesas de debate en directo de la «I Revuelta Radial por el Apoyo Mutuo»"
 ---
 

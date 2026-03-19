@@ -2,7 +2,7 @@
 title: "Especial 8M en Radio Argayo"
 date: 2023-03-07
 categories: [programas-propios]
-image: /assets/imgs/posts/cadenaso-300x150Tertulia8M_6Cadenazo.jpg
+image: /assets/imgs/posts/Tertulia8M_6Cadenazo.jpg
 excerpt: "Esta semana la Tertulia de las Comadres llega con un programa muy especial por el Día Internacional de las Mujeres, con el que también participamos este próximo sábado en el 6º Cadenazo, esta vez Feminista, de las Radios Libres del Estado. Un programa en el que las comadres estarán más acompañadas que nunca, pues son […]"
 ---
 

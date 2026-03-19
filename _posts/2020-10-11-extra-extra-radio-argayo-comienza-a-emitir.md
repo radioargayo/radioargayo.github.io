@@ -2,7 +2,7 @@
 title: "¡Extra! ¡Extra! ¡Radio Argayo comienza a emitir!"
 date: 2020-10-11
 categories: [noticias, programas-propios]
-image: 
+image: /assets/imgs/posts/logo_header_left.png
 excerpt: "El pasado sábado 3 de octubre, anunciamos por distintas vías el comienzo de la emisión de nuestra primera parrilla de programas, comenzando con un vuelo de EPO a las 16:30 h. Quienes pudisteis y habéis podido seguir la emisión de Radio Argayo estos días, habréis comprobado que a distintas horas a lo largo de la […]"
 ---
 
