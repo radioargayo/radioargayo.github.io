@@ -24,9 +24,9 @@ Meses más tarde, este reducido grupo, apoyado por otras, deciden apostar por or
 
 Es así como **Radio Argayo y Él Pájaro Observador se conocen**, una radio libre sin programas y un programa sin radio (_crush radiofónico_). Como Cupido, la difusión y contacto de _[Briega](http://briega/)_ fue clave en esta bonita historia. Radio Argayo se asienta, **la asamblea se nutre de nuevas personas** y empieza a rodar poco a poco.
 
-En la **primavera de 2020 surgen los cadenazos estatales e [internacionales]()** de radios libres, a los que [Radio Argayo es invitada](). Así empieza a resonar como radio libre y participa en varios cadenazos, primero por parte de El Pájaro Observador como programa de Radio Argayo y, posteriormente, con colaboraciones propias de Radio Argayo.
+En la **primavera de 2020 surgen los cadenazos estatales e internacionales** de radios libres, a los que Radio Argayo es invitada. Así empieza a resonar como radio libre y participa en varios cadenazos, primero por parte de El Pájaro Observador como programa de Radio Argayo y, posteriormente, con colaboraciones propias de Radio Argayo.
 
-A partir de ese momento y desde entonces, Radio Argayo ha ido entrando a formar parte de la red de radios libres, lo que ha derivado en su **inclusión en el servidor colectivo** que se creó en el verano de 2020, como soporte de la emisión de la radio a través de internet. De esta forma, **[Radio Argayo comenzó a sonar a través de internet]()**.
+A partir de ese momento y desde entonces, Radio Argayo ha ido entrando a formar parte de la red de radios libres, lo que ha derivado en su **inclusión en el servidor colectivo** que se creó en el verano de 2020, como soporte de la emisión de la radio a través de internet. De esta forma, **Radio Argayo comenzó a sonar a través de internet**.
 
 A lo largo del otoño y el invierno de 2020, además de ir incluyendo la **[reemisión de diversos programas de otras radios libres]({{ site.baseurl }}/produccionexterna)**, nacieron **nuevos programas locales** en la parrilla de Radio Argayo, y tras una asamblea amplia con los distintos proyectos de programas, la asamblea de Radio Argayo creció de nuevo.
 
