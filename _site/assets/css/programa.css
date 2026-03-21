@@ -1,0 +1,84 @@
+.programa-detalle {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.programa-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.programa-main {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.programa-imagen img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.programa-descripcion {
+  flex: 1;
+  min-width: 200px;
+}
+
+.programa-emision ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.boton-red {
+  padding: 6px 12px;
+  background-color: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.boton-red:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .programa-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.volver-programas {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #949494;
+  color: #ffee00;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+  background: #ffee00;
+  color: #000;
+  transform: translateY(-2px);
+}
