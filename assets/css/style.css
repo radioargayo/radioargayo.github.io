@@ -469,14 +469,16 @@ details.toggle summary::-webkit-details-marker {
 .main-content .schedule-table th,
 .main-content .schedule-table td {
   border: 1px solid #000 !important;
-  border-top: 1px solid #000 !important; /* <- fuerza 1px */
+  border-top: 1px solid #000 !important;
   padding: 0 !important;
   text-align: center !important;
   vertical-align: middle !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .main-content .schedule-table td.cell.continuation {
-  border-top: 0px solid white !important; /* <- quita borde superior */
+  border-top: 0px solid white !important;
 }
 
 .main-content .schedule-table th {
@@ -527,10 +529,12 @@ details.toggle summary::-webkit-details-marker {
   color: inherit;
   padding: 6px;
   box-sizing: border-box;
-    font-size: 15px;
+  font-size: 15px;
   line-height: 1.0;
-}
 
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
 
 /* borde inferior */
 .main-content .schedule-table tbody tr:last-child td {
@@ -553,10 +557,67 @@ details.toggle summary::-webkit-details-marker {
   align-items: center;
 }
 
+/* ===== MEDIA QUERIES ===== */
 @media screen and (max-width: 600px) {
+
+  /* filas más pequeñas en móvil */
   .main-content .schedule-table tbody tr {
-    height: 20px;
-    min-height: 20px;
+    height: auto;
+    min-height: auto;
+    margin-bottom: 15px;
+  }
+
+  /* tabla tipo tarjeta */
+  .main-content .schedule-table,
+  .main-content .schedule-table thead,
+  .main-content .schedule-table tbody,
+  .main-content .schedule-table th,
+  .main-content .schedule-table td,
+  .main-content .schedule-table tr {
+    display: block;
+  }
+
+  .main-content .schedule-table thead tr {
+    display: none;
+  }
+
+  .main-content .schedule-table td {
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  .main-content .schedule-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    font-weight: bold;
+  }
+
+  /* Bloques adaptados a móvil */
+  .main-content .schedule-table td.cell.has-block .block {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 2px 0 !important;
+  }
+
+  .main-content .schedule-table td.cell.has-block .block .block-link {
+    font-size: 12px !important;
+    padding: 4px !important;
+    display: block !important;
+    text-align: left !important;
+    line-height: 1.2 !important;
+  }
+
+  .main-content .schedule-table td.cell.has-block .block-a,
+  .main-content .schedule-table td.cell.has-block .block-b {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 }
 
@@ -564,19 +625,157 @@ details.toggle summary::-webkit-details-marker {
 @media screen and (min-width: 64em) {
   .main-content {
     max-width: 70rem;
-    padding: 1rem 2rem;   /* <- menos margen */
+    padding: 1rem 2rem;
   }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
-    padding: 1rem 1rem;   /* <- menos margen */
+    padding: 1rem 1rem;
   }
 }
 
 @media screen and (max-width: 42em) {
   .main-content {
-    padding: 1rem 0rem;   /* deja igual para móvil */
+    padding: 1rem 0rem;
+  }
+}
+
+/* SCROLL HORIZONTAL */
+.table-container {
+  overflow-x: auto;
+}
+
+/* ===== HORARIO COMPACTO ===== */
+.main-content .schedule-table {
+  display: table !important;
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  table-layout: fixed !important;
+
+  border: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+}
+
+.main-content .schedule-table th,
+.main-content .schedule-table td {
+  border: 1px solid #000 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.main-content .schedule-table td.cell.has-block .block {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .schedule-table td.cell.has-block .block-a {
+  background: #ffee00 !important;
+  font-weight: bold;
+}
+
+.main-content .schedule-table td.cell.has-block .block-b {
+  background: #ffd1dc !important;
+  font-weight: bold;
+}
+
+.main-content .schedule-table td.cell.has-block .block .block-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* SCROLL HORIZONTAL */
+.table-container {
+  overflow-x: auto;
+}
+
+/* ===== MOBILE COMPACT ===== */
+@media screen and (max-width: 600px) {
+
+  /* tabla tipo tarjeta */
+  .main-content .schedule-table,
+  .main-content .schedule-table thead,
+  .main-content .schedule-table tbody,
+  .main-content .schedule-table th,
+  .main-content .schedule-table td,
+  .main-content .schedule-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .main-content .schedule-table thead tr {
+    display: none;
+  }
+
+  .main-content .schedule-table tbody tr {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+  }
+
+  .main-content .schedule-table td {
+    padding-left: 45% !important;
+    position: relative;
+    text-align: left !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .main-content .schedule-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    font-weight: bold;
+  }
+
+  /* Bloques adaptados a móvil */
+  .main-content .schedule-table td.cell.has-block .block {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 2px 0 !important;
+  }
+
+  .main-content .schedule-table td.cell.has-block .block .block-link {
+    font-size: 11px !important;
+    padding: 2px 4px !important;
+    display: block !important;
+    text-align: left !important;
+    line-height: 1.2 !important;
+  }
+
+  .main-content .schedule-table td.cell.has-block .block-a,
+  .main-content .schedule-table td.cell.has-block .block-b {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Reduce altura de las filas de horas */
+  .main-content .schedule-table td.time {
+    font-size: 12px !important;
+    font-weight: bold;
+    padding: 2px 4px !important;
   }
 }
 
