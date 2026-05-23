@@ -269,7 +269,7 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.75rem; font-size: 0.9rem; }
   .btn + .btn { margin-top: 1rem; margin-left: 0; } }
 
-.page-header { color: #000; text-align: center; background-color: #ffee00; background-image: linear-gradient(120deg, #ffee00, #ffee00); }
+.page-header { color: #000; text-align: center; background-color: #ffe066; background-image: linear-gradient(120deg, #ffe066, #ffe066); }
 @media screen and (min-width: 64em) { .page-header { padding: 5rem 6rem; } }
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 3rem 4rem; } }
 @media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
@@ -426,7 +426,7 @@ details.toggle summary::-webkit-details-marker {
   bottom: 0;
   width: 80%;
   height: 3px;
-  background-color: #ffee00;
+  background-color: #ffe066;
 }
 
 /* ----- H3 (###) – Subapartados ----- */
@@ -510,7 +510,7 @@ details.toggle summary::-webkit-details-marker {
 }
 
 .main-content .schedule-table td.cell.has-block .block-a {
-  background: #ffee00 !important;
+  background: #ffe066 !important;
   font-weight: bold;
 }
 
@@ -598,6 +598,23 @@ details.toggle summary::-webkit-details-marker {
   left: 0;
   background: #fff;
   z-index: 2;
+}
+
+.main-content .schedule-table td.cell.has-block .block-a,
+.main-content .schedule-table td.cell.has-block .block-b {
+  transition: background-color 0.2s ease;
+}
+
+.main-content .schedule-table td.cell.has-block:hover .block-a {
+  background: #ffee00 !important;
+}
+
+.main-content .schedule-table td.cell.has-block:hover .block-b {
+  background: #ffb7c5 !important;
+}
+
+.main-content .schedule-table td.cell.has-block:hover {
+  cursor: pointer;
 }
 
 /* ESTILO PARA LA RADIO!! */
@@ -796,7 +813,7 @@ audio {
 
 /* FOOTER*/
 .site-footer {
-  background: #ffee00;
+  background: #ffe066;
   padding: 20px 15px;
   text-align: center;
   border-top: 1px solid #ccc;
@@ -1232,7 +1249,7 @@ audio {
 }
 
 .grid-link:hover {
-  background: #ffee00;
+  background: #ffe066;
   transform: translateY(-3px);
 }
 
@@ -1248,7 +1265,7 @@ audio {
 .radio-titulo a {
   text-decoration: none;
   color: #000;
-  border-bottom: 2px solid #ffee00;
+  border-bottom: 2px solid #ffe066;
 }
 
 .radio-titulo a:hover {
@@ -1332,7 +1349,7 @@ audio {
 }
 
 .radio-programa:hover {
-  background: #ffee00;
+  background: #ffe066;
   transform: translateY(-3px);
 }
 
@@ -1435,4 +1452,20 @@ audio {
     line-height: 1.5;
   }
 }
++/* Default layout */
+.page-content,
+.wrapper,
+.latest-posts {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+  .page-content,
+  .wrapper,
+  .latest-posts {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
