@@ -1357,6 +1357,33 @@ audio {
   border-radius: 4px;
 }
 
+.latest-posts {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.latest-post {
+  margin-bottom: 1.5rem;
+}
+
+.latest-post-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.blog-summary-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+
+.latest-post-content p {
+  margin: 0;
+}
+
 .post-preview-content {
   flex: 1;
   line-height: 1.35; /* texto más compacto */

@@ -26,6 +26,25 @@ layout: default
 
 {% include radio.html %}
 
+## Últimas entradas del blog
+
+Puedes consultar [nuestro Blog]({{ site.baseurl }}/blog/index) para leer el resto de entradas. 
+
+<div class="latest-posts">
+  {% for post in site.posts limit:2 %}
+    <article class="latest-post">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+
+      <div class="latest-post-content">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-summary-image">
+
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+
 
 ## Parrilla de programas
 
