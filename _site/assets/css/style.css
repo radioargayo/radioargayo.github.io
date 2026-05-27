@@ -1368,8 +1368,8 @@ audio {
 .post-preview-image img,
 .post-featured-image {
   float: left;
-  width: 350px; /* más pequeña para que el texto se acerque */
-  max-width: 50%;
+  width: 300px; /* más pequeña para que el texto se acerque */
+  max-width: 90%;
   margin: 0 5px 0px 0; /* margen mínimo a derecha y debajo */
   border-radius: 4px;
 }
@@ -1390,8 +1390,8 @@ audio {
 }
 
 .blog-summary-image {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   flex: 0 0 auto;
