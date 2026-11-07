@@ -290,7 +290,15 @@ blocks:
     type: "a"
     title: "Música para Aburrir"
     url: "/musicaaburrir/"
-    
+
+  - day: "Viernes"
+    start: "23:00"
+    end: "24:00"
+    rowspan: 2
+    type: "a"
+    title: "ai ai ai"
+    url: "/aiaiai/"
+
   - day: "Sábado"
     start: "10:00"
     end: "12:00"

@@ -162,3 +162,17 @@
   redes: {}
   descripcion: | 
     Steppin’ es un programa dedicado al reggae, a algunos de sus antecesores como pueden ser el ska o el rocksteady y, ¿por qué no?, también a otros tantos géneros derivados que han ido surgiendo con el paso de los años. 
+
+- name: ai ai ai
+  image: /assets/imgs/programas/aiaiai.jpeg
+  link: /aiaiai
+  emision: 
+    - dia: Viernes
+      hora: "23:00"
+  redes:
+    ivoox: https://www.ivoox.com/podcast-ai-ai-ai_sq_f13234714_1.html
+    instagram: https://www.instagram.com/i.a.i.a.no/
+  descripcion: |
+    ai ai ai
+
+    Sonidos humanos, a mano ia máquina.
